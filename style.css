@@ -1,0 +1,294 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+#navbar{
+    background-color: black;
+    display: block;
+  text-align: center;
+
+    position: fixed;
+    top:0;
+    width:100%;
+    padding: 0.75rem 0rem 0.75rem 0.75rem;
+}
+
+.hover{
+ animation: rotation 1s linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.fadeIn {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+  #navbar2{
+    background-color: rgba(0, 0, 0, 0.288);
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 0.75rem;
+    position: fixed;
+    top:85px;  
+
+}
+  .button-nav2{
+    background-color: transparent;
+    padding: 5px;
+    font-family: 'Italiana', serif; 
+font-weight: bold;
+text-decoration: none; 
+    color: black;
+    margin-right: 1rem; 
+    border-radius: 6px;
+    text-align: center;
+    background-color: aliceblue;
+
+  }
+  .button-nav2:hover {
+    color:white;
+    background-color: black; 
+  }
+#slide1, #slide3{
+    background-color: rgb(255, 255, 255);
+    
+}
+.main-img{
+  max-width: 100%;
+  height:100%;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://www.mercedes-benz.com/en/vehicles/mercedes-benz-classic/classiccenter/_jcr_content/root/fullscreenstage_copy/image/MQ7-0-image-20211117150519/01-mercedes-benz-classic-centerfellbach-header-5120x2240.jpeg");
+}
+.title{
+  text-align: center;
+
+}
+.top-left{
+  top: 80px;
+  left: 20px;
+  padding-top:10%;
+  margin-left: 10px;
+}
+
+#background {
+  height: 100%;
+  display: flex;
+  padding-left: 5%;
+  background-size: cover;
+  background-position: center;
+   background-image: url(https://www.mercedes-benz.com/en/vehicles/mercedes-benz-classic/classiccenter/_jcr_content/root/imagejumper_10503641/image/MQ7-0-image-20211118122902/08-mercedes-benz-classic-centerfellbach-3400x1912.jpeg;);
+  }
+
+#background > #top-left-slide3 {
+  color: white;
+  font-size: 2em;
+  
+}
+#top-left-slide3-title{
+  padding-bottom: 240px;
+}
+p{
+  font-family: 'DM Sans', sans-serif; 
+
+font-size: 16px;
+}
+/*#background:has(#button-slide3:hover) {
+  background-image: url(https://www.mercedes-benz.com/en/vehicles/mercedes-benz-classic/classiccenter/_jcr_content/root/imagejumper_10503641/parsys/imagejumperitem/image/MQ7-0-image-20211118123015/09-mercedes-benz-classic-centerfellbach-3400x1912.jpeg);
+}*/
+#button-slide3{
+  width: 200px;
+  height: 100px;
+  border-color: white;
+  font-family: "DM Sans", sans-serif;
+  border-style:solid;
+  font-size: 20px;
+  border-radius: 6px;
+}
+#button-slide3:hover{
+  background-color: white;
+  color:black;
+
+}
+
+#slide2{
+  padding-top: 10px;
+    background-color:white;
+    display: block;
+    text-align: center;
+
+}
+
+#images-block{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.block{
+  display: flex;
+  flex-direction: row;
+ text-align: center;
+ background-color:white;
+
+}
+
+#block1-right img{
+  width: 70%;
+  max-height: auto;
+  padding-top: 1rem;
+  text-align: center;
+  
+}
+#block1-left {
+  max-width:auto;
+  width: 60%;
+  max-height: 20%;
+  padding-left: 200px;
+  text-align: center;
+}
+#block2-left img{
+  width: 70%;
+  height: auto;
+  padding-top: 1rem;
+  text-align: center;
+  
+}
+#block2-right {
+  text-align: center;
+  max-width:30%;
+  width: 70%;
+  padding-right: 150px;
+  padding-top: 2rem;
+}
+h1{
+   
+   font-size: 50;
+   font-family: 'Italiana', serif; 
+  text-align: center; }
+
+  h2{
+    font-family: 'Italiana', serif; 
+    font-weight:1000;
+  }
+button,#submit {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+body{
+    background-color: black;
+    display: block;
+    text-align: center;
+}
+#contact{
+  padding-top: 5px;
+    background-color:black;
+    text-align: center;
+ color: aliceblue;
+ padding-bottom: 20px;
+}
+.method{
+  text-align: center;
+}
+
+  #slide4{
+    background-color: white;
+  text-align: center;
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #slide2{
+      background-color:white;
+      display: block;
+      transition: background-color 0.5s ease;
+  border: 10px black;
+  }
+  #images-block{
+    padding-top: 3rem;
+    
+  }
+  .block{
+    border: 10px black;
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+   background-color:white;
+  }
+  
+  #block1-right img{
+    width: 70%;
+    max-height: auto;
+    padding-top: 1rem;
+    
+  }
+  #block1-left {
+    max-width:auto;
+    width: 100%;
+    max-height: 20%;
+    padding-left: 0px;
+    
+  }
+  #block2-left img{
+    width: 70%;
+    height: auto;
+    padding-top: 1rem;
+    text-align: center;
+    
+  }
+  #block2-right {
+    text-align: center;
+    max-width:100%;
+    width: 100%;
+    padding-right: 0px;
+    padding-top: 2rem;
+  }
+  #navbar2{
+    background-color: rgba(0, 0, 0, 0.288);
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    top:80px;  
+    justify-content: center;
+
+}
+  .button-nav2{
+    background-color: transparent;
+    padding: 05px;
+    font-family: 'Italiana', serif; 
+font-weight: bold;
+text-decoration: none; 
+    color: black;
+    margin-right: 1rem; 
+    border-radius: 2px;
+    text-align: center;
+    background-color: aliceblue;
+    font-size: 10px;
+
+  }
+  .button-nav2:hover {
+    color:white;
+    background-color: black; 
+  }
+  }
