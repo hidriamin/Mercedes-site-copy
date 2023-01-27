@@ -12,6 +12,9 @@ z-index: 8;
     width:100%;
     padding: 0.75rem 0rem 0.75rem 0.75rem;
 }
+#slide2,#slide3,#slide4,#contact{
+  scroll-margin-top: 8rem;
+}
 .hidden{
   opacity: 0;
   transition: all 1s;
@@ -72,7 +75,7 @@ font-weight: bold;
 text-decoration: none; 
     color: black;
     margin-right: 1rem; 
-    border-radius: 6px;
+    border-radius: 16px;
     text-align: center;
     background-color: aliceblue;
 
@@ -119,6 +122,9 @@ text-decoration: none;
   font-size: 2em;
   
 }
+#title-slide2 p{
+ padding: 20px;
+}
 #top-left-slide3-title{
   padding-bottom: 240px;
 }
@@ -160,6 +166,7 @@ font-size: 16px;
 .block{
   display: flex;
   flex-direction: row;
+  justify-content: center;
  text-align: center;
  background-color:white;
  padding: 40px
@@ -168,6 +175,8 @@ font-size: 16px;
 #block1-right img{
   width: 70%;
   max-height: auto;
+  max-width: 70%;
+  object-fit: contain;
   padding-top: 1rem;
   text-align: center;
   
@@ -176,7 +185,7 @@ font-size: 16px;
   max-width:auto;
   width: 60%;
   max-height: 20%;
-  padding-left: 200px;
+ 
   text-align: center;
 }
 #block2-left img{
@@ -214,9 +223,12 @@ body{
     text-align: center;
     padding: 0;
     margin:0;
+    overflow-x: hidden;
+   position: relative;
 }
 html {
 	scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 #contact{
   padding-top: 5px;
@@ -227,7 +239,7 @@ html {
 }
 .method{
   text-align: center;
-  padding: 0px 30px 100px 30px;
+  padding: 0px 30px 50px 30px;
 }
 
   #slide4{
@@ -295,21 +307,21 @@ html {
     padding: 1rem;
     position: relative;
     top:80px;  
-    justify-content: center;
+    
+    justify-content: space-around;
 
 }
   .button-nav2{
     background-color: transparent;
-    padding: 05px;
+    padding: 5px;
     font-family: 'Italiana', serif; 
 font-weight: bold;
 text-decoration: none; 
     color: black;
-    margin-right: 1rem; 
-    border-radius: 2px;
+    border-radius: 6px;
     text-align: center;
     background-color: aliceblue;
-    font-size: 10px;
+    font-size: 12px;
 
   }
   p{
@@ -318,6 +330,20 @@ text-decoration: none;
   .button-nav2:hover {
     color:white;
     background-color: black; 
+  }
+  #top-left{
+    top: 80px;
+    left: 20px;
+    padding-top:15%;
+    margin-left: 10px;
+  }
+  #top-left p{
+    color: black;
+    text-shadow:
+    -1px -1px 0 white,  
+     1px -1px 0 white,
+     -1px 1px 0 white,
+      1px 1px 0 white;
   }
   }
   @media(prefers-reduced-motion){
