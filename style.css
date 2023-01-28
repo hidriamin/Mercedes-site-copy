@@ -313,6 +313,9 @@ padding: 20px;
     #block1 img{
       margin-top: 30%;
     }
+  #block4 p{
+    padding-bottom: 40%;
+  }
     #block2,#block4{
       max-width: 400px;
       padding: 1rem 0 1rem 0;
