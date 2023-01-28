@@ -8,16 +8,25 @@ window.onscroll = function() {
     var curScrollPosition = window.pageYOffset;
 
     if(prevScrollPosition < curScrollPosition &&  mainNavbar.getBoundingClientRect().top <= 0)
-    { 
-        secondaryNavbar.style.display = "none";
+    { secondaryNavbar.className = "slideOut";
+        secondaryNavbar.style.opacity = "0";
+      
+        
 
     } else if(curScrollPosition === 0) {
+        secondaryNavbar.className = "slideIn";
         secondaryNavbar.style.display = "flex";
         secondaryNavbar.style.alignItems = "center";
         secondaryNavbar.style.justifyContent = "center";
+        secondaryNavbar.style.opacity = "1";
+       
     }
     else {
-        secondaryNavbar.style.display = "none";
+        secondaryNavbar.className = "slideOut";
+        secondaryNavbar.style.opacity = "0";
+        
+        
+        
     }
     prevScrollPosition = curScrollPosition;
 }

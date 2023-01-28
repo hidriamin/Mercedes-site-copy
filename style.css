@@ -1,353 +1,400 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 #navbar{
-    background-color: black;
-    display: block;
-  text-align: center;
+  background-color: black;
+  display: block;
+text-align: center;
 z-index: 8;
-    position: fixed;
-    top:0;
-    width:100%;
-    padding: 0.75rem 0rem 0.75rem 0.75rem;
+  position: fixed;
+  top:0;
+  width:100%;
+  padding: 0.75rem 0rem 0.75rem 0.75rem;
 }
 #slide2,#slide3,#slide4,#contact{
-  scroll-margin-top: 8rem;
+scroll-margin-top: 8rem;
 }
 .hidden{
-  opacity: 0;
-  transition: all 1s;
-  filter: blur(5px);
-  transform: translateX(-100%);
+opacity: 0;
+transition: all 1s;
+filter: blur(5px);
+transform: translateX(-100%);
 }
 .show{
-  opacity: 1;
-  filter: blur(0px);
-  transform: translateX(0);
+opacity: 1;
+filter: blur(0px);
+transform: translateX(0);
 }
 .hover{
- animation: rotation 1s linear;
+animation: rotation 1s linear;
 }
 @keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(359deg);
+}
 }
 .slideIn {
-  animation-duration: 1s;
-  animation-name: slidein;
+animation-duration: .7s;
+animation-name: slidein;
+
 }
 
 @keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
+from {
+  margin-left: 100%;
+  width: 100%;
+}
 
-  to {
+to {
+  margin-left: 0%;
+  width: 100%;
+}
+}
+.slideOut {
+  animation-duration: 1s;
+  animation-name: slideout;
+  }
+  
+  @keyframes slideout{
+  from {
     margin-left: 0%;
     width: 100%;
   }
-}
-
-
-  #navbar2{
-    z-index: 8;
-    background-color: rgba(0, 0, 0, 0.288);
-    display: block;
-    text-align: center;
+  
+  to {
+    margin-left: -250%;
     width: 100%;
-    padding: 0.75rem;
-    position: fixed;
-    top:85px; 
-    transition: all 1s;
+  }
+  }
+.slideDown {
+  top:-100px;
+  animation-name: slidedown;
+  }
+ 
+
+
+#navbar2{
+  z-index: 8;
+  background-color: rgba(0, 0, 0, 0.288);
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 0.75rem;
+
+  position: fixed;
+  top:85px; 
+  transition: all 1s ease-in-out;
 
 }
-  .button-nav2{
-    background-color: transparent;
-    padding: 5px;
-    font-family: 'Italiana', serif; 
+.button-nav2{
+  background-color: transparent;
+  padding: 5px;
+  font-family: 'Italiana', serif; 
 font-weight: bold;
 text-decoration: none; 
-    color: black;
-    margin-right: 1rem; 
-    border-radius: 16px;
-    text-align: center;
-    background-color: aliceblue;
+  color: black;
+  margin-right: 1rem; 
+  border-radius: 6px;
+  text-align: center;
+  background-color: aliceblue;
 
-  }
-  .button-nav2:hover {
-    color:white;
-    background-color: black; 
-  }
+}
+.button-nav2:hover {
+  color:white;
+  background-color: black; 
+}
 #slide1, #slide3{
-    background-color: rgb(255, 255, 255);
-    
+  background-color: rgb(255, 255, 255);
+  
 }
 
 #main-img{
-  max-width: 100%;
-  height:100%;
-  display: flex;
-  background-size: cover;
-  background-position: center;
-  background-image: url("https://www.mercedes-benz.com/en/vehicles/mercedes-benz-classic/classiccenter/_jcr_content/root/fullscreenstage_copy/image/MQ7-0-image-20211117150519/01-mercedes-benz-classic-centerfellbach-header-5120x2240.jpeg");
+max-width: 100%;
+height:100%;
+display: flex;
+background-size: cover;
+background-position: center;
+background-image: url("https://www.mercedes-benz.com/en/vehicles/mercedes-benz-classic/classiccenter/_jcr_content/root/fullscreenstage_copy/image/MQ7-0-image-20211117150519/01-mercedes-benz-classic-centerfellbach-header-5120x2240.jpeg");
+}
+#main-img h1{
+  text-align: left;
+  padding-top: 20px;
 }
 .title{
-  text-align: center;
+text-align: center;
 
 }
 #top-left{
-  top: 80px;
-  left: 20px;
-  padding-top:10%;
-  margin-left: 10px;
+  text-align: left;
+top: 80px;
+left: 20px;
+padding-top:10%;
+margin-left: 10px;
 }
 
 #background {
-  height: 100%;
-  display: flex;
-  padding-left: 5%;
-  background-size: cover;
-  background-position: center;
-   background-image: url(https://www.mercedes-benz.com/en/vehicles/mercedes-benz-classic/classiccenter/_jcr_content/root/imagejumper_10503641/image/MQ7-0-image-20211118122902/08-mercedes-benz-classic-centerfellbach-3400x1912.jpeg;);
-  }
+height: 100%;
+display: flex;
+padding-left: 5%;
+background-size: cover;
+background-position: center;
+ background-image: url(https://www.mercedes-benz.com/en/vehicles/mercedes-benz-classic/classiccenter/_jcr_content/root/imagejumper_10503641/image/MQ7-0-image-20211118122902/08-mercedes-benz-classic-centerfellbach-3400x1912.jpeg;);
+}
 
 #background > #top-left-slide3 {
-  color: white;
-  font-size: 2em;
-  
+color: white;
+font-size: 2em;
+
 }
 #title-slide2 p{
- padding: 20px;
+padding: 20px;
 }
 #top-left-slide3-title{
-  padding-bottom: 240px;
+padding-bottom: 240px;
 }
 p{
-  font-family: 'DM Sans', sans-serif; 
+font-family: 'DM Sans', sans-serif; 
 
 font-size: 16px;
 }
 /*#background:has(#button-slide3:hover) {
-  background-image: url(https://www.mercedes-benz.com/en/vehicles/mercedes-benz-classic/classiccenter/_jcr_content/root/imagejumper_10503641/parsys/imagejumperitem/image/MQ7-0-image-20211118123015/09-mercedes-benz-classic-centerfellbach-3400x1912.jpeg);
+background-image: url(https://www.mercedes-benz.com/en/vehicles/mercedes-benz-classic/classiccenter/_jcr_content/root/imagejumper_10503641/parsys/imagejumperitem/image/MQ7-0-image-20211118123015/09-mercedes-benz-classic-centerfellbach-3400x1912.jpeg);
 }*/
 #button-slide3{
-  width: 200px;
-  height: 100px;
-  border-color: white;
-  font-family: "DM Sans", sans-serif;
-  border-style:solid;
-  font-size: 20px;
-  border-radius: 6px;
+width: 200px;
+height: 100px;
+border-color: white;
+font-family: "DM Sans", sans-serif;
+border-style:solid;
+font-size: 20px;
+border-radius: 6px;
 }
 #button-slide3:hover{
-  background-color: white;
-  color:black;
+background-color: white;
+color:black;
 
 }
 
 #slide2{
-  padding-top: 10px;
-    background-color:white;
-    display: block;
-    text-align: center;
+padding-top: 10px;
+  background-color:white;
+  display: block;
+  text-align: center;
 
 }
 
 #images-block{
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
 }
-.block{
+#images-block img{
+  max-height: 400px;
+      max-width: 400px;
+      object-fit: cover;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 50px;
+      margin-right: 50px;
+      
+}
+.paragraph{
+  margin-left: 50px;
+  margin-right: 50px;
+  max-height: 400px;
+      max-width: 500px;
+}
+
+#block1,#block3{
+  max-width: 1000px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
- text-align: center;
- background-color:white;
- padding: 40px
-}
+  padding: 1rem 0 1rem 0;
+justify-items: center;
 
-#block1-right img{
-  width: 70%;
-  max-height: auto;
-  max-width: 70%;
-  object-fit: contain;
-  padding-top: 1rem;
-  text-align: center;
-  
-}
-#block1-left {
-  max-width:auto;
-  width: 60%;
-  max-height: 20%;
  
-  text-align: center;
 }
-#block2-left img{
-  width: 70%;
-  height: auto;
-  padding-top: 1rem;
-  text-align: center;
+
+#block2,#block4{
+  max-width: 1000px;
+  padding: 2rem 0 1rem 0;
+  display: flex;
   
 }
-#block2-right {
-  text-align: center;
-  max-width:30%;
-  width: 70%;
-  padding-right: 150px;
-  padding-top: 2rem;
-}
-h1{
-   
-   font-size: 50;
-   font-family: 'Italiana', serif; 
-  text-align: center; }
 
-  h2{
-    font-family: 'Italiana', serif; 
-    font-weight:1000;
-  }
+h1{
+ 
+ font-size: 50;
+ font-family: 'Italiana', serif; 
+text-align: center; }
+
+h2{
+  font-family: 'Italiana', serif; 
+  font-weight:1000;
+}
 button,#submit {
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-    cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  cursor: pointer;
 }
 body{
-    background-color: black;
-    display: block;
-    text-align: center;
-    padding: 0;
-    margin:0;
-    overflow-x: hidden;
-   position: relative;
+  background-color: black;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin:0;
+  overflow-x: hidden;
+ position: relative;
 }
 html {
-	scroll-behavior: smooth;
-  overflow-x: hidden;
+scroll-behavior: smooth;
+overflow-x: hidden;
 }
 #contact{
-  padding-top: 5px;
-    background-color:black;
-    text-align: center;
- color: aliceblue;
- padding-bottom: 20px;
+padding-top: 5px;
+  background-color:black;
+  text-align: center;
+color: aliceblue;
+
 }
 .method{
-  text-align: center;
-  padding: 0px 30px 50px 30px;
+text-align: center;
+padding: 0px 30px 20px 30px;
 }
 
-  #slide4{
-    background-color: white;
-  text-align: center;
-  padding: 40px;
-  }
-  @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    #slide2{
-      background-color:white;
-      display: block;
-      transition: background-color 0.5s ease;
-  border: 10px black;
-  }
-  #slide1{
-    color:black;
-    outline: 2px;
+#slide4{
+  background-color: white;
+text-align: center;
+padding: 20px;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #main-img h1{
+    text-align: left;
+    padding-top: 0px;
   }
   #images-block{
-    padding-top: 3rem;
+    display: block;
+    align-items: center;
+    text-align: center;
     
-  }
-  .block{
-    border: 10px black;
-    display: flex;
-    flex-direction: column;
+    }
+    #images-block p{
+      font-size: 15px;
+    }
+    #images-block img{
+      max-height: auto;
+     max-width: 300px;
+     object-fit: cover;
+          margin-top: auto;
+          margin-bottom: auto;
+          margin-left: 0px;
+          margin-right: 0px;
+          
+    }
+    .paragraph{
+      margin-left: auto;
+      margin-right: auto;
+      max-height: auto;
+          max-width: 300px;
+    }
+    
+    #block1,#block3{
+      max-width: 400px;
+      display: block;
+      padding: 1rem 0 1rem 0;
    text-align: center;
-   background-color:white;
-  }
-  
-  #block1-right img{
-    width: 70%;
-    max-height: auto;
-    padding-top: 1rem;
-    
-  }
-  #block1-left {
-    max-width:auto;
-    width: 100%;
-    max-height: 20%;
-    padding-left: 0px;
-    
-  }
-  #block2-left img{
-    width: 70%;
-    height: auto;
-    padding-top: 1rem;
-    text-align: center;
-    
-  }
-  #block2-right {
-    text-align: center;
-    max-width:100%;
-    width: 100%;
-    padding-right: 0px;
-    padding-top: 2rem;
-  }
-  #navbar2{
-    background-color: rgba(0, 0, 0, 0.288);
-   display: flex;
-   flex-direction: row;
-   flex-wrap: nowrap;
-    width: 100%;
-    padding: 1rem;
-    position: relative;
-    top:80px;  
-    
-    justify-content: space-around;
+    }
+    #block3 img{
+      margin-top: 90px;
+    }
+    #block1 img{
+      margin-top: 40px;
+    }
+    #block2,#block4{
+      max-width: 400px;
+      padding: 1rem 0 1rem 0;
+     text-align: center;
+      display: block;
+    }
+  #slide2{
+    background-color:white;
+    display: block;
+    transition: background-color 0.5s ease;
+border: 10px black;
+}
+#slide1{
+  color:black;
+  outline: 2px;
+}
+#navbar2{
+  background-color: rgba(0, 0, 0, 0.288);
+ display: flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  position: relative;
+  top:80px;  
+  align-content: center;
+  justify-content: space-around;
 
 }
-  .button-nav2{
-    background-color: transparent;
-    padding: 5px;
-    font-family: 'Italiana', serif; 
+.button-nav2{
+  background-color: transparent;
+  padding: 5px;
+  font-family: 'Italiana', serif; 
 font-weight: bold;
 text-decoration: none; 
-    color: black;
-    border-radius: 6px;
-    text-align: center;
-    background-color: aliceblue;
-    font-size: 12px;
-
-  }
-  p{
-    font-size: 16px;
-  }
-  .button-nav2:hover {
-    color:white;
-    background-color: black; 
-  }
-  #top-left{
-    top: 80px;
-    left: 20px;
-    padding-top:15%;
-    margin-left: 10px;
-  }
+  color: black;
+  border-radius: 6px;
+  text-align: center;
+  background-color: aliceblue;
+  font-size: 12px;
+margin-right: 0;
+margin:0 5px 0 5px;
+}
+p{
+  font-size: 15px;
+}
+.button-nav2:hover {
+  color:white;
+  background-color: black; 
+}
+#top-left{
+  top: 80px;
+  left: 20px;
+  padding-top:15%;
+  margin-left: 10px;
+}
+#top-left p{
+  padding-top: 0px;
+  color: black;
+  text-shadow:
+  -1px -1px 0 white,  
+   1px -1px 0 white,
+   -1px 1px 0 white,
+    1px 1px 0 white;
+    padding-bottom: 40px;
+}
+}
+@media only screen and (max-width: 1024px){
   #top-left p{
-    color: black;
+    padding-top: 0px;
+    color: white;
     text-shadow:
-    -1px -1px 0 white,  
-     1px -1px 0 white,
-     -1px 1px 0 white,
-      1px 1px 0 white;
+    -1px -1px 0 black,  
+     1px -1px 0 black,
+     -1px 1px 0 black,
+      1px 1px 0 black;
+      padding-bottom: 40px;
   }
+}
+@media(prefers-reduced-motion){
+  .hidden{
+    transition: none;
   }
-  @media(prefers-reduced-motion){
-    .hidden{
-      transition: none;
-    }
-  }
+}
